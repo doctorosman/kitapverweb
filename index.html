@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KitapVer</title>
 
-    <link rel="stylesheet" href="css/style.css">
     
     <!-- Favicon -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3e60217406.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-- Headers -->
@@ -32,19 +37,19 @@
 
         <div class="header-2">
             <nav class="navbar">
-                <a href="#" id="home">Ana Sayfa</a>
-                <a href="#" id="featured">Öne Çıkanlar</a>
-                <a href="#" id="arrivals">Teslim Edilenler</a>
-                <a href="#" id="contact">İletişim</a>
+                <a href="#home">Ana Sayfa</a>
+                <a href="#featured">Öne Çıkanlar</a>
+                <a href="#reviews">Kullanıcı Yorumları</a>
+                <a href="#contact">İletişim</a>
             </nav>
         </div>
     </header>
 
     <nav class="bottom-navbar">
-        <a href="#" class="fas fa-home"></a>
-        <a href="#" class="fas fa-list"></a>
-        <a href="#" class="fas fa-tags"></a>
-        <a href="#" class="fas fa-life-ring"></a>
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-address-book"></a>
     </nav>
 
     <div class="login-form-container">
@@ -66,6 +71,244 @@
         </form>
     </div>
 
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Kitaplarınızı Paylaşın</h3>
+                <p>
+                    Eğitim hayatınız için ihtiyacınız olan kitapları birbirinizle iletişim kurarak kolayca paylaşın.
+                </p>
+                <a href="#" class="btn">Şimdi Takas Yapın</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">    
+                    <a href="#" class="swiper-slide"><img src="img/book-1.png"></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-2.png"></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-3.png"></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-4.png"></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-5.png"></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-6.png"></a>
+                </div>
+                <img src="img/stand.png" class="stand">
+            </div>
+        </div>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-paper-plane"></i>
+            <div class="content">
+                <h3>Ücretsiz Teslimat</h3>
+                <p>100$ ve üzeri</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Güvenli Ödeme</h3>
+                <p>%100 güvenli ödeme</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Kolay İade</h3>
+                <p>10 gün içinde</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>7/24 Destek</h3>
+                <p>Bizi her an arayabilirsiniz</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <h1 class="heading">
+            <span>Öne Çıkan Kitaplar</span>
+        </h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="img/book-1.png">
+                    </div>
+                    <div class="content">
+                        <h3>Bilgi Sarmal TYT Matematik Soru Bankası</h3>
+                        <div class="user"><a href="#">Muhammed Artunç</a> <i class="verified bx bxs-badge-check"></i></div>
+                        <a href="#" class="btn">Takas Teklif Et</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading"><span>Kullanıcı Yorumları</span></h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="img/pic-1.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-2.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-3.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-4.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-5.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-6.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/pic-1.png">
+                    <h3>Ege Yuca</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo consequatur molestias omnis aperiam. Consequuntur dolorum amet alias qui quis praesentium et optio itaque mollitia voluptates impedit sit, aliquid ipsa?
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Bulunduğumuz Ülkeler</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Hindistan</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> ABD</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Rusya</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Fransa</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Japonya</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Afrika</a>
+            </div>
+            <div class="box">
+                <h3>Hızlı Erişim</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Ana Sayfa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Öne Çıkanlar</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Yeni Eklenen Kitaplar</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Kullanıcı Yorumları</a>
+            </div>
+            <div class="box">
+                <h3>Diğer Sayfalar</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Hesabım</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Takaslarım</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Gizlilik Politikası</a>
+            </div>
+            <div class="box" id="contact">
+                <h3>Bize Ulaşın</h3>
+                <a href="#"><i class="fas fa-phone"></i>+90 500 000 00 00</a>
+                <a href="#"><i class="fas fa-phone"></i>+90 500 000 00 00</a>
+                <a href="#"><i class="fas fa-envelope"></i>iletisim@kitapver.net</a>
+                <img src="img/worldmap.png" class="map">
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit">Created by <span><a href="https://instagram.com/artuunc">@artunc</a></span> and <span><a href="https://instagram.com/osmanyinan">@osman</a></span> | Tüm hakları saklıdır.</div>
+    </section>
+
+    <div class="loader-container">
+        <img src="img/loader-img.gif">
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
