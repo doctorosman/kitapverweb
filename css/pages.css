@@ -1,0 +1,175 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.profile h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.profile h4 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+    color: var(--green);
+}
+
+.profile p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+.profile p span:first-child, .profile p span:nth-child(2) {
+    margin-right: 2rem;
+}
+
+.profile img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-books .heading span {
+    font-size: 2.4rem;
+}
+
+.profile-books {
+    padding-top: 2rem;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.books-container .box {
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+}
+
+.books-container .box:hover {
+    border: var(--border-hover);
+}
+
+.books-container .box .image {
+    padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+
+.books-container .box .image img {
+    height: 25rem;
+}
+
+.books-container .box .icons {
+    border-bottom: var(--border-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.books-container .box:hover .image {
+    transform: translateY(6rem);
+}
+
+.books-container .box:hover .icons {
+    transform: translateY(0%);
+}
+
+.books-container .box .icons a {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.books-container .box .icons a:hover {
+    background: var(--green);
+}
+
+.books-container .box .content {
+    background: #eee;
+    padding: 1.5rem;
+}
+
+.books-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.profile-buttons .btn {
+    margin: 0 1rem;
+    width: 20rem;
+    text-align: center;
+    border: .1rem solid var(--green);
+}
+
+.profile-buttons .follow-btn.hidden, .profile-buttons .following-btn.hidden {
+    display: none;
+}
+
+.profile-buttons .following-btn, .profile-buttons .message-btn {
+    background: #fff;
+    color: var(--green);
+}
+
+.profile-buttons .following-btn:hover, .profile-buttons .message-btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .books-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile {
+        display: block;
+    }
+
+    .profile .pp {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .books-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-buttons {
+        flex-direction: column;
+    }
+
+    .profile-buttons .btn {
+        margin: 1rem 0;
+    }
+}

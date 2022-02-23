@@ -12,7 +12,6 @@ window.onload = () => {
     }else {
         document.querySelector('.header .header-2').classList.remove('active');
     }
-  loader();
 }
 
 let searchForm = document.querySelector('.search-form');
